@@ -4,12 +4,14 @@ import { Image } from "expo-image";
 
 type Props = {
     imgSource: string;
+    selectedImage: string | undefined;
 }
 
-const ImageViewer = ({imgSource}: Props) => {
+const ImageViewer = ({imgSource, selectedImage}: Props) => {
+    const imageSource = selectedImage ? {uri: selectedImage} : imgSource
   return (
     <View>
-      <Image style={styles.image} source={imgSource} />
+      <Image style={styles.image} source={imageSource} />
     </View>
   )
 }
