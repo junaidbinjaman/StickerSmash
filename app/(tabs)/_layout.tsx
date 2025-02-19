@@ -8,7 +8,7 @@ import { StatusBar } from 'expo-status-bar';
 const RootLayout = () => {
     return (
         <GestureHandlerRootView style={{flex: 1}}>
-            <StatusBar style='inverted' />
+            <StatusBar style='light' />
             <Tabs
                 screenOptions={{
                     tabBarActiveTintColor: '#ffd33d',

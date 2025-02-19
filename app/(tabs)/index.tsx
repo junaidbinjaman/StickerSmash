@@ -1,4 +1,4 @@
-import {View, StyleSheet, type ImageSourcePropType} from 'react-native';
+import {View, StyleSheet, type ImageSourcePropType, Text} from 'react-native';
 import * as ImagePicker from 'expo-image-picker';
 import {useEffect, useRef, useState} from 'react';
 
@@ -81,6 +81,7 @@ export default function Index() {
 
     return (
         <View style={styles.container}>
+            <Text style={{color: '#fff', fontSize: 24, fontWeight: 'bold'}}>Select an Image</Text>
             <ViewShot ref={imageRef} style={styles.imageContainer}>
                 <ImageViewer
                     imgSource={PlaceholderImage}
